@@ -8,6 +8,7 @@ setup(
     version='1.1.1',
     description='Simple library for working with the VK Slaves',
     long_description=readme,
+    long_description_content_type='text/markdown',
     license='WTFPL',
     package_dir={'': 'src'},
     packages=find_packages(where='src'),
