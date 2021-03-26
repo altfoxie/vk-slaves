@@ -41,6 +41,7 @@ class Slaves:
             params=query,
             json=body,
             headers={
+                'User-Agent': 'My User Agent 1.0',
                 "authorization": "Bearer " + self.bearer,
             },
         ).json()
