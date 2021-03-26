@@ -1,4 +1,5 @@
 import re
+from fake_useragent import UserAgent
 from typing import Mapping
 
 import requests
@@ -9,6 +10,7 @@ bearer_re = r"index.html\?(.*)"
 class Slaves:
     def __init__(self, token: str):
         self.token = token
+        self.ua = UserAgent().random
 
         # Get bearer
         get = requests.get(
@@ -42,6 +44,7 @@ class Slaves:
             json=body,
             headers={
                 "authorization": "Bearer " + self.bearer,
+                "user-agent": self.ua
             },
         ).json()
 

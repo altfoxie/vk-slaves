@@ -5,7 +5,7 @@ with open('README.md', 'r', encoding='utf-8') as f:
 
 setup(
     name='vk_slaves',
-    version='1.1.1',
+    version='1.2.0',
     description='Simple library for working with the VK Slaves',
     long_description=readme,
     long_description_content_type='text/markdown',
@@ -17,5 +17,5 @@ setup(
     keywords=['VK', 'Slaves', 'VKSlaves'],
     url='https://github.com/MaxUNof/vk-slaves',
     download_url='https://pypi.org/project/vk_slaves/',
-    install_requires=['requests']
+    install_requires=['requests', 'fake-useragent']
 )

@@ -1,4 +1,4 @@
-__version__      = '1.1.1'
+__version__      = '1.2.0'
 __author__       = 'MaxUNof'
 __author_email__ = 'maxunof@pm.me'
 __license__      = 'WTFPL'
